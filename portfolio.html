@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio</title>
+        <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,22 +16,29 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <header>
+  <body class="container">
+    <header class="horizontal-ul header container">
       <a href="" class="webstudio">Web<span class="studio-header">Studio</span></a>
-      <nav>
-        <ul class="list-style">
-          <li><a class="link " href="index.html">Estudio</a></li>
-          <li><a class="link active-page" href="./portfolio.html">Portafolio</a></li>
-          <li><a class="link " href="#footer">Contactos</a></li>
+      <nav  class="nav">
+        <ul class="list-style horizontal-ul">
+          <li><a class="link active-page" href="index.html">Estudio</a></li>
+          <li><a class="link" href="./portfolio.html">Portafolio</a></li>
+          <li><a class="link" href="#footer">Contactos</a></li>
         </ul class="list-style">
       </nav>
-      <ul class="list-style">
+      <ul class="list-style horizontal-ul header-contacts">
         <li>
-          <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <a class="link"href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
         </li>
-        <li><a class="link" href="tel:+525555296000">+52 55 5529 6000</a></li>
-      </ul class="list-style">
+        <li>
+          <a class="link" href="tel:+525555296000" 
+
+            >+52 55 5529 6000</a
+          >
+        </li>
+      </ul>
     </header>
     <main>
       <section>
