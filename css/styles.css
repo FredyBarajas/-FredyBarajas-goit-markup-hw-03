@@ -4,6 +4,7 @@
   --secundary-color: white;
   --tertiary-color: #f5f4fa;
   --go-service: #188ce8;
+  --principal-text-color: #757575;
 }
 
 *,
@@ -20,7 +21,7 @@
 
 body {
   font-family: roboto, sans-serif;
-  color: #757575;
+  color: var(--principal-text-color);
   font-size: 14px;
 }
 
@@ -39,6 +40,7 @@ body {
 }
 
 .header {
+  border-bottom: var(--tertiary-color) solid 1px;
   padding: 24px 0 25px 0;
   -ms-flex-align: center;
 }
@@ -198,17 +200,19 @@ body {
   background-color: var(--color-selected);
 }
 
-.subtitles-proyects {
+.subtitles-proyect {
   color: black;
   font-size: 18px;
   line-height: 2em;
   font-weight: 700;
+  text-decoration: none;
 }
 
 .type-proyect {
   font-size: 16px;
   line-height: 1.875;
   font-weight: 400;
+  color: var(--principal-text-color);
 }
 
 .box-products {
@@ -250,4 +254,23 @@ body {
 .galery {
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 118px;
+}
+
+.link-cards {
+  font-weight: 500;
+  text-decoration: none;
+  line-height: 1.17em;
+  color: black;
+}
+
+.description-card {
+  padding: 0 20px;
+  border: var(--tertiary-color) solid 1px;
+  margin: 0 0 20px 0;
+  font-size: 0;
+  width: 370px;
+}
+.section-portfolio {
+  margin-top: 70px;
 }
