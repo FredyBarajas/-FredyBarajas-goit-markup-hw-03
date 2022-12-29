@@ -29,6 +29,7 @@ body {
   margin: 0;
   border: none;
   padding: 200px 452px 200px;
+  min-width: 1200px;
 }
 
 .nav {
@@ -39,11 +40,11 @@ body {
 
 .header {
   padding: 24px 0 25px 0;
+  -ms-flex-align: center;
 }
 
 .horizontal-ul {
   display: flex;
-  align-items: center;
 }
 
 .principal-title {
@@ -63,6 +64,8 @@ body {
   letter-spacing: 0.03em;
   color: var(--color-selected);
   text-decoration: none;
+  display: flex;
+  padding: 0 0 0 35px;
 }
 
 .list-style {
@@ -78,7 +81,7 @@ body {
 }
 
 .header-contacts {
-  padding-left: 294px;
+  padding-left: 262px;
 }
 .link:hover,
 .link:focus,
@@ -113,6 +116,7 @@ body {
   font-size: 36px;
   line-height: 1.17;
   font-weight: 700;
+  text-align: center;
 }
 
 .subtitle-products {
@@ -121,9 +125,14 @@ body {
   font-weight: 700;
 }
 
+.card-studio {
+  justify-content: space-around;
+  margin-bottom: 94px;
+}
 .section-team {
   background-color: var(--tertiary-color);
-  margin: 0;
+  margin: 50px 0 0 0;
+  padding: 94px 0;
 }
 
 .subtitle-team {
@@ -131,12 +140,14 @@ body {
   font-size: 16px;
   line-height: 1.1875;
   font-weight: 500;
+  text-align: center;
 }
 
 .position {
   font-size: 16px;
   line-height: 1.1875;
   font-weight: 400;
+  text-align: center;
 }
 
 .link-footer {
@@ -158,6 +169,16 @@ body {
   font-style: normal;
 }
 
+.filter {
+  width: 611px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 34px;
+  padding-bottom: 8px;
+  justify-content: space-between;
+}
+
 .buttons-portfolio {
   font-family: inherit;
   background-color: var(--tertiary-color);
@@ -167,7 +188,7 @@ body {
   border-radius: 4px;
   border: none;
   cursor: pointer;
-  padding: 6px 18px 6px 17px;
+  padding: 6px 18px 6px 18px;
 }
 
 .buttons-portfolio:hover,
@@ -190,6 +211,19 @@ body {
   font-weight: 400;
 }
 
+.box-products {
+  width: 270px;
+  margin: 95px 16px;
+}
+
+.box-products:last-child {
+  margin-right: 0;
+}
+
+.box-products:first-child {
+  margin-left: 0;
+}
+
 .paragraph {
   line-height: 1.71em;
 }
@@ -204,4 +238,16 @@ body {
 
 .studio-footer {
   color: var(--secundary-color);
+}
+
+.footer {
+  background-color: var(--brand-color);
+  border: none;
+  min-width: 1200px;
+  padding: 60px 0;
+}
+
+.galery {
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
