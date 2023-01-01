@@ -59,7 +59,8 @@ img {
 .nav {
   display: flex;
   flex-direction: column;
-  padding-left: 43px;
+  margin-left: 68px;
+  margin-right: 270px;
 }
 
 .header {
@@ -68,7 +69,6 @@ img {
   padding-bottom: 25px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .horizontal-ul {
@@ -106,8 +106,19 @@ img {
   font-weight: 500;
   text-decoration: none;
   line-height: 1.17em;
+  color: var(--principal-text-color);
+  margin: 0 25px;
+}
+
+.link:hover,
+.link:focus,
+.link:active,
+.active-page {
+  color: var(--color-selected);
+}
+
+.nav-links {
   color: black;
-  padding: 0 0 0 50px;
 }
 
 .link:hover,
@@ -144,18 +155,22 @@ img {
   line-height: 1.17;
   font-weight: 700;
   text-align: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .subtitle-products {
   color: black;
   line-height: 1.17;
   font-weight: 700;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .card-studio {
-  justify-content: space-around;
+  margin-right: 30px;
+}
+
+.card-studio:last-child {
+  margin-right: 0;
 }
 .section-team {
   background-color: var(--tertiary-color);
@@ -180,9 +195,10 @@ img {
 .link-footer {
   font-weight: 500;
   text-decoration: none;
-  line-height: 1.17em;
+  line-height: 2em;
   color: white;
   font-style: normal;
+  margin-bottom: 9px;
 }
 
 .link-footer:hover,
@@ -194,6 +210,7 @@ img {
 .adress {
   color: white;
   font-style: normal;
+  margin-top: 6px;
 }
 
 .filter {
@@ -242,11 +259,11 @@ img {
 
 .box-products {
   width: 300px;
-  padding-left: 32px;
+  margin-left: 32px;
 }
 
 .box-products:first-child {
-  padding-left: 0;
+  margin-left: 0;
 }
 
 .paragraph {
@@ -255,8 +272,12 @@ img {
 
 .card-members {
   background-color: var(--secundary-color);
+  margin-right: 30px;
 }
 
+.card-members:last-child {
+  margin-right: 0;
+}
 .studio-header {
   color: var(--brand-color);
 }
@@ -269,6 +290,7 @@ img {
   background-color: var(--brand-color);
   border: none;
   padding: 60px 0;
+  line-height: 2em;
 }
 
 .galery {
